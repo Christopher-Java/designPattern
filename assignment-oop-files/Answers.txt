@@ -1,0 +1,14 @@
+What happens if the designers of the Storage class decide to change the implementation of the List to LinkedList?
+Om man vill ändra implementationen till LinkedList i Storage så måste man även ändra persons i Main till List eftersom List kan hantera LinkedList och ArrayList.
+
+Think about the method calls in main - does trimToSize() exist in LinkedList?
+trimToSize() finns i ArrayList
+
+Should Main know about what concrete type of List Storage provides?
+Det kan den göra men det är bättre om man använder sig av List eftersom den hanterar alla typer av listor.
+****************************************************************************************
+
+Task 2
+
+Is it possible in this design for an Engineer to also become a Manager?
+Nej, eftersom Engineer inte ärver av Manager.
