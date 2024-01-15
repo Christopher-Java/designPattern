@@ -21,16 +21,12 @@ public class Employee {
     }
 
     public void removeRole(String deleteRole) {
-        // Skapa en iterator för att kunna ta bort element medan du itererar
         Iterator<Role> iterator = roles.iterator();
 
-        // Iterera genom listan med roller
         while (iterator.hasNext()) {
             Role role = iterator.next();
 
-            // Om rollens namn matchar deleteRole
             if (deleteRole.equals(role.getRoleName())) {
-                // Ta bort rollen från listan
                 iterator.remove();
             }
         }
