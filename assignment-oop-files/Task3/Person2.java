@@ -1,22 +1,22 @@
-public class Person{
+public class Person2{
 
     private String name;
     private String phone;
     private String email;
 
-    public Person(String name){
+    public Person2(String name){
         if(name == null){
             throw new NullPointerException("Name cannot be null");
         }
         this.name = name;
     }
 
-    public Person(String name, String email){
+    public Person2(String name, String email){
         this(name);
         this.email = email;
     }
 
-    public Person(String name, String email, String phone){
+    public Person2(String name, String email, String phone){
         this(name);
         this.email= email;
         this.phone = phone;

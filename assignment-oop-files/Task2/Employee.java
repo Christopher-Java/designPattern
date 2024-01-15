@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
 public class Employee {
@@ -17,6 +18,22 @@ public class Employee {
 
     public void addRoles(Role role) {
         roles.add(role);
+    }
+
+    public void removeRole(String deleteRole) {
+        // Skapa en iterator för att kunna ta bort element medan du itererar
+        Iterator<Role> iterator = roles.iterator();
+
+        // Iterera genom listan med roller
+        while (iterator.hasNext()) {
+            Role role = iterator.next();
+
+            // Om rollens namn matchar deleteRole
+            if (deleteRole.equals(role.getRoleName())) {
+                // Ta bort rollen från listan
+                iterator.remove();
+            }
+        }
     }
 
     public List<Role> getRoles() {

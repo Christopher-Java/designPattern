@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Role {
 
     private String roleName;
@@ -9,6 +11,7 @@ public class Role {
     public String getRoleName() {
         return roleName;
     }
+
 
     @Override
     public String toString() {
