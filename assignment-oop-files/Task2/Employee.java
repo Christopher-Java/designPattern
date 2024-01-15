@@ -29,6 +29,9 @@ public class Employee {
             if (deleteRole.equals(role.getRoleName())) {
                 iterator.remove();
             }
+            else{
+                System.out.println("There is no role with that name!");
+            }
         }
     }
 
